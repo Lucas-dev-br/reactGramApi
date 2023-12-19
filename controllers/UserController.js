@@ -23,7 +23,7 @@ const register = async (req,res) => {
 const user = await User.findOne({email})
 
 if(user) {
-    res.status(422).json({erros: ["Porfavor, utilize outro e-mail"]})
+    res.status(422).json({erros: ["Por favor, utilize outro e-mail"]})
     return
 }
 
